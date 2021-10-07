@@ -1,10 +1,8 @@
 #main{
-    align-items: center;
-    font-size:50px;
-    height:800px;
-    margin:0px;
     display: grid;
     grid-template-columns: 420px 420px 420px;
+    row-gap: 0px;
+    column-gap: 5px;
     }
 #fix{
     position : fixed;
@@ -12,9 +10,8 @@
 
     }
 #menu{
-    padding-top:10px;
     border: solid 10px black;
 }
 #menu:hover{
     border: solid 10px teal;
-}  
+}
