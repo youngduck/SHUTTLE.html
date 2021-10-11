@@ -4,7 +4,7 @@
     row-gap: 0px;
     column-gap: 5px;
     }
-#fix{
+aside{
     position : fixed;
     right: 0px;
 
@@ -14,4 +14,7 @@
 }
 #menu:hover{
     border: solid 10px teal;
+}
+#f{
+    margin:0;
 }
