@@ -1,6 +1,7 @@
 html,body{
     margin: 0px;
     padding: 0px;
+    background-color: black;
 }
 #main{
     display: grid;
@@ -14,16 +15,16 @@ aside{
     grid-template-columns: 150px;
     grid-template-rows: 110px 110px 110px;
     position : fixed;
-    right: 20px;
+    right: 50px;
     }
 #menu{
-    border: solid 10px black;
+    border: solid 10px darkslateblue;
 }
 #menu:hover{
     border: solid 10px teal;
 }
 #f{
-    border: solid 5px black;
+    border: solid 5px darkslateblue;
 }
 #f:hover{
     border: solid 5px teal;
