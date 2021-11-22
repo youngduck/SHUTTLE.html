@@ -1,8 +1,9 @@
 html,body{
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
     background-color: black;
 }
+
 #main{
     display: grid;
     grid-template-columns: 420px 420px 420px;
@@ -23,9 +24,9 @@ aside{
 #menu:hover{
     border: solid 10px teal;
 }
-#f{
+#sideBar{
     border: solid 5px darkslateblue;
 }
-#f:hover{
+#sideBar:hover{
     border: solid 5px teal;
 }
