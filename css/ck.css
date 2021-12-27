@@ -1,0 +1,78 @@
+html,body{
+    margin: 5px;
+    background-color: black;
+}
+#ckName{
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 400px;
+    
+}
+
+/*BOX1*/
+#BOX1{
+    margin:10px 0 0 50px;
+    float: left;
+    display: inline;
+}
+
+#Player{
+    border: solid 5px darkslateblue;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+#tribe{
+    width:80px;
+}
+
+#player_name{
+    width: 100px;
+    border: none;
+    text-align: center;
+}
+#make_button{
+
+    border: solid 5px darkslateblue;
+    background-color:white;
+    text-align: center;
+    width: 100px;
+    height:50px;
+}
+
+#make_button:hover{
+    border: solid 5px teal;
+}
+
+/*BOX2*/
+
+#BOX2{
+    margin: 10px 0 0 50px;
+    float: left;
+    display: inline;
+    background-color: white;
+}
+#team{
+    width: 520px;
+    height: 100px;
+    border: solid 5px darkslateblue;
+    text-align: center;
+}
+
+/*BOX3*/
+#BOX3{
+    border: solid 5px darkslateblue;
+    margin: 10px 0 0 50px;
+    clear: left;
+    background-color: white;
+    width:fit-content;
+}
+#spon{
+    border-collapse: collapse;
+}
+#sponsor,#star{
+    border:none;
+    text-align: center;
+}

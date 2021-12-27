@@ -4,33 +4,102 @@
         <title>Shuttle</title>
         <meta charset = "utf-8">
         <link rel="shortcut icon" href = "photos/shuttle.ico">
-
+        <link rel="stylesheet" href="css/ck.css">
+        <script src="js/ck.js"></script>
+        
     </head>
     <body>
-        <a href = "index.html"><img src = "photos/대문.png"></a>
-        <?$board_id=$_GET['board_id'];?>
-    <div id="board_write">
-        <h4>글을 작성하는 공간입니다.</h4>
-            <div id="write_area">
-                <form enctype="multipart/form-data" action="write_ok.php?board_id=<?echo $board_id;?>" method="post">
-                    <div id="in_title">
-                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="제목" maxlength="100" required></textarea>
-                    </div>
- 
-                    <div class="wi_line"></div>
-                    <div id="in_content">
-                        <textarea name="content" id="ucontent" placeholder="내용" required></textarea>
-                    </div>
- 
-                      <input type="file" name="SelectFile" />
- 
- 
-                    <div class="bt_se">
-                        <button type="submit">글 작성</button>
-                    </div>
-                </form>
-            </div>
+    
+        <a href = "index.html"><img src = "photos/대문.png" width="1270px;"></a>
+        <div ><input type="text" id="ckName"> </div>
+        <p></p>
+        <div id = "BOX1">
+            <table border="3" id="Player" style="height: 100px;">
+                <tr>
+                    <td id="tribe">Zerg</td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                </tr>
+                <tr>
+                    <td id="tribe">Terran</td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                </tr>
+                <tr>
+                    <td id="tribe">Protoss</td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                    <td><input type="text" id="player_name"></td>
+                </tr>
+            
+            </table>
+            <input type="button" id="make_button" name="making_team3" value="3:3" onclick="alert('3:3');">
+            <input type="button" id="make_button" name="making_team4" value="4:4" >
+            <input type="button" id="make_button" name="reset_team4" value="reset">
         </div>
-
+        
+        <div id = "BOX2">
+        <table id = 'team' border="3">
+            <tr>
+                <td>A team</td>
+                <td id = "aTeam">player1</td>
+                <td id = "aTeam">player2</td>
+                <td id = "aTeam">player3</td>
+                <td id = "aTeam">player4</td>
+            </tr>
+            <tr>
+                <td>B team</td>
+                <td id = "bTeam">player5</td>
+                <td id = "bTeam">player6</td>
+                <td id = "bTeam">player7</td>
+                <td id = "bTeam">player8</td>
+            </tr>
+        </table>
+        </div>
+        <div id="BOX3">
+            <table border="3" id = "spon">
+                <th>후원자</th>
+                <th>star</th>
+                <th>후원자</th>
+                <th>star</th>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+            </table>
+        </div>
+        
+        
     </body>
 </html>
