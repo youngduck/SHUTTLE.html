@@ -6,7 +6,7 @@ html,body{
     background-color: white;
     font-size: 50px;
     text-align: center;
-    margin-left: 400px;
+    margin: 20px 0 0 400px;
     
 }
 
@@ -25,16 +25,21 @@ html,body{
     
 }
 #tribe{
-    width:80px;
+    width:50px;
 }
 
-#player_name{
+.player_name{
     width: 100px;
+    height:70px;
+    font-size: 20px;
     border: none;
     text-align: center;
 }
-#make_button{
-
+#button_collect{
+    margin: 0px;
+}
+#match_button{
+    margin: 10px;
     border: solid 5px darkslateblue;
     background-color:white;
     text-align: center;
@@ -42,30 +47,14 @@ html,body{
     height:50px;
 }
 
-#make_button:hover{
+#match_button:hover{
     border: solid 5px teal;
 }
 
-/*BOX2*/
-
 #BOX2{
+    border: solid 5px darkslateblue;
     margin: 10px 0 0 50px;
     float: left;
-    display: inline;
-    background-color: white;
-}
-#team{
-    width: 520px;
-    height: 100px;
-    border: solid 5px darkslateblue;
-    text-align: center;
-}
-
-/*BOX3*/
-#BOX3{
-    border: solid 5px darkslateblue;
-    margin: 10px 0 0 50px;
-    clear: left;
     background-color: white;
     width:fit-content;
 }
@@ -74,5 +63,21 @@ html,body{
 }
 #sponsor,#star{
     border:none;
+    text-align: center;
+}
+
+/*BOX3*/
+
+#BOX3{
+    margin: 10px 0 0 50px;
+    clear: left;
+    display: block;
+    
+}
+#team{
+    width: 520px;
+    height: 100px;
+    background-color: white;
+    border: solid 5px darkslateblue;
     text-align: center;
 }

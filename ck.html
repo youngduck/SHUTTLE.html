@@ -16,52 +16,35 @@
         <div id = "BOX1">
             <table border="3" id="Player" style="height: 100px;">
                 <tr>
-                    <td id="tribe">Zerg</td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
+                    <td id="tribe"> <img src="photos/zerg.jpg" width="50px;"height="50px;">ZERG</td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
                 </tr>
                 <tr>
-                    <td id="tribe">Terran</td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
+                    <td id="tribe"><img src="photos/terran.jpg" width="50px;"height="50px;">Terran</td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
                 </tr>
                 <tr>
-                    <td id="tribe">Protoss</td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
-                    <td><input type="text" id="player_name"></td>
+                    <td id="tribe"><img src="photos/protoss.jpg" width="50px;"height="50px;">Protoss</td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
+                    <td><input type="text" class="player_name"></td>
                 </tr>
             
             </table>
-            <input type="button" id="make_button" name="making_team3" value="3:3" onclick="alert('3:3');">
-            <input type="button" id="make_button" name="making_team4" value="4:4" >
-            <input type="button" id="make_button" name="reset_team4" value="reset">
-        </div>
-        
-        <div id = "BOX2">
-        <table id = 'team' border="3">
-            <tr>
-                <td>A team</td>
-                <td id = "aTeam">player1</td>
-                <td id = "aTeam">player2</td>
-                <td id = "aTeam">player3</td>
-                <td id = "aTeam">player4</td>
-            </tr>
-            <tr>
-                <td>B team</td>
-                <td id = "bTeam">player5</td>
-                <td id = "bTeam">player6</td>
-                <td id = "bTeam">player7</td>
-                <td id = "bTeam">player8</td>
-            </tr>
-        </table>
-        </div>
-        <div id="BOX3">
+            <div id = "button_collect">
+            <input type="button" id="match_button" name="making_team3" value="3:3" onclick="sixman();">
+            <input type="button" id="match_button" name="making_team4" value="4:4" onclick="eightman();">
+            <input type="button" id="match_button" name="reset_team4" value="reset" onclick="reset();">
+            </div>
+        </div> 
+        <div id="BOX2">
             <table border="3" id = "spon">
                 <th>후원자</th>
                 <th>star</th>
@@ -97,9 +80,62 @@
                     <td><input type="text" value="" id="sponsor"></td>
                     <td><input type="text" value="" id="star"></td>
                 </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                    <td><input type="text" value="" id="sponsor"></td>
+                    <td><input type="text" value="" id="star"></td>
+                </tr>
+                
             </table>
         </div>
-        
-        
+        <div id = "BOX3">
+            <table id = 'team' border="3">
+                <tr>
+                    <td>A team</td>
+                    <td class = "aTeam">player1</td>
+                    <td class = "aTeam">player2</td>
+                    <td class = "aTeam">player3</td>
+                    <td class = "aTeam">player4</td>
+                </tr>
+                <tr>
+                    <td>B team</td>
+                    <td class = "bTeam">player5</td>
+                    <td class = "bTeam">player6</td>
+                    <td class = "bTeam">player7</td>
+                    <td class = "bTeam">player8</td>
+                </tr>
+            </table>
+            </div>
     </body>
 </html>
